@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "HyliaSerif";
+  src: url(/fuentes/HyliaSerif.otf);
+}
+
+html,
+body {
+  font-family: HyliaSerif;
+  color: goldenrod;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: url(../Cursor/espadam.cur), auto;
+  background-image: url(https://www.zelda.com/breath-of-the-wild/assets/img/patterns/black.jpg);
+}
+
+nav {
+  border-top: goldenrod solid 4px;
+  border-bottom: goldenrod solid 4px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: url(https://www.zelda.com/breath-of-the-wild/assets/img/patterns/black.jpg);
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+nav ul li:hover {
+  border-bottom-color: goldenrod;
+  transform: translateY(-3px);
+}
+
+.trailer {
+  text-align: center;
+  color: goldenrod;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container div {
+  width: 30%;
+  height: auto;
+  margin: 15px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border: 10px solid goldenrod;
+  transition: transform 0.3s;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+}
+
+.container p {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+a{
+  color: goldenrod;
+
+}
+
+.containervid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.containervid p {
+  position: absolute;
+  text-align: center;
+  color: goldenrod;
+  font-size: 100px;
+}
+
+footer{
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Estilo para tablet */
+@media (max-width: 768px) {
+  header {
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .container div {
+    width: 45%;
+  }
+
+  .container p {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  .containervid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  
+  .containervid p {
+    position: absolute;
+    text-align: center;
+    color: goldenrod;
+    font-size: 40px;
+  }
+
+  footer{
+    font-size: 15px;
+  }
+}
+
+/* Estilo para móvil */
+@media (max-width: 480px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    border-bottom: none;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }
+  
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  .container div {
+    width: 100%;
+    height: auto;
+  }
+
+  .container p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .containervid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  
+  .containervid p {
+    position: absolute;
+    text-align: center;
+    color: goldenrod;
+    font-size: 30px;
+  }
+  
+  footer{
+    font-size: 15px;
+  }
+}
